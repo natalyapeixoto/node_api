@@ -6,7 +6,7 @@ exports.get = (req, res) => {
 }
 exports.getById = (req, res) => {
 	let id = req.params.id
-	res.status(200).send(alunas.filter(item => item.id == id))
+	res.status(200).send(alunas.find(item => item.id == id))
 }
 
 exports.post = (req, res) => {
